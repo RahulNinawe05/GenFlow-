@@ -46,4 +46,4 @@ if st.button("Predict"):
         sentiment, score = predict_sentiment(user_input)
         st.subheader("Model Prediction")
         st.write(f"**Review Sentiment:** {sentiment}")
-        st.write(f"**Confidence Score:** {score:.2f}")
+        st.write(f"**Prediction Score:** {score:.2f}")
