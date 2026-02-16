@@ -16,7 +16,7 @@ reverse_word_index = {value: key for key, value in word_index.items()}
 # Load pre-trained model
 @st.cache_resource
 def load_sentiment_model():
-    return load_model("simple_rnn_imdb.h5")
+    return load_model("Simple RNN/simple_rnn_imdb.h5")
 
 model = load_sentiment_model()
 

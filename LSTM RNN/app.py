@@ -4,11 +4,15 @@ import tensorflow as tf
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 import pickle
 
-# Load the trained model
-model = tf.keras.models.load_model("next_word_lstm.h5")
+import os
 
-# Load the tokenizer
-with open("tokenizer.pickle", "rb") as handle:
+BASE_DIR = os.path.dirname(__file__)
+
+model = tf.keras.models.load_model(
+    os.path.join(BASE_DIR, "next_word_lstm.h5")
+)
+
+with open(os.path.join(BASE_DIR, "tokenizer.pickle"), "rb") as handle:
     tokenizer = pickle.load(handle)
 
 # Get max sequence length from model input shape
