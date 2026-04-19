@@ -1,8 +1,35 @@
+# Python
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+
+# Jupyter Checkpoints
+.ipynb_checkpoints/
+
+# ML Models & Weights
+*.h5
+*.pkl
+*.pickle
+
+# TensorBoard Logs
+log/
+logs/
+regressionlogs/
+runs/
+*.v2
+
+# Datasets (optional - remove if you want CSV on GitHub)
+*.csv
+
+# IDE & OS
+.vscode/
+.DS_Store
+Thumbs.db
+
 # Environment
-.venv
+.env
 
-# Notes
+# Note
 .basics - 0
-
-# git
-.git
